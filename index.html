@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./segment-display.css" />
+    <link rel="icon" href="./mine.png" />
+    <title>Busca Minas</title>
+  </head>
+  <body>
+    <section class="board-wrapper">
+      <div class="board-container">
+        <div class="board-header">
+          <div id="flags-count" class="flags-remaing">
+            <div class="segment-display" id="display">
+              <div class="seconds-unit">
+                <div class="segment seg-0 segment-units-flags segment-on"></div>
+                <div class="segment seg-1 segment-units-flags segment-on"></div>
+                <div class="segment seg-2 segment-units-flags segment-on"></div>
+                <div class="segment seg-3 segment-units-flags segment-on"></div>
+                <div class="segment seg-4 segment-units-flags segment-on"></div>
+                <div class="segment seg-5 segment-units-flags segment-on"></div>
+                <div class="segment seg-6 segment-units-flags"></div>
+              </div>
+              <div class="seconds-ten">
+                <div class="segment seg-0 segment-ten-flags segment-on"></div>
+                <div class="segment seg-1 segment-ten-flags segment-on"></div>
+                <div class="segment seg-2 segment-ten-flags segment-on"></div>
+                <div class="segment seg-3 segment-ten-flags segment-on"></div>
+                <div class="segment seg-4 segment-ten-flags segment-on"></div>
+                <div class="segment seg-5 segment-ten-flags segment-on"></div>
+                <div class="segment seg-6 segment-ten-flags"></div>
+              </div>
+              <div class="seconds-hundred">
+                <div class="segment seg-0 segment-hundred-flags segment-on"></div>
+                <div class="segment seg-1 segment-hundred-flags segment-on"></div>
+                <div class="segment seg-2 segment-hundred-flags segment-on"></div>
+                <div class="segment seg-3 segment-hundred-flags segment-on"></div>
+                <div class="segment seg-4 segment-hundred-flags segment-on"></div>
+                <div class="segment seg-5 segment-hundred-flags segment-on"></div>
+                <div class="segment seg-6 segment-hundred-flags"></div>
+              </div>
+            </div>
+          </div>
+          <img id="face-icon" src="./happy.png" class="face-icon" alt="face" />
+          <div class="segment-display" id="display">
+            <div class="seconds-unit">
+              <div class="segment seg-0 segment-units segment-on"></div>
+              <div class="segment seg-1 segment-units segment-on"></div>
+              <div class="segment seg-2 segment-units segment-on"></div>
+              <div class="segment seg-3 segment-units segment-on"></div>
+              <div class="segment seg-4 segment-units segment-on"></div>
+              <div class="segment seg-5 segment-units segment-on"></div>
+              <div class="segment seg-6 segment-units"></div>
+            </div>
+            <div class="seconds-ten">
+              <div class="segment seg-0 segment-ten segment-on"></div>
+              <div class="segment seg-1 segment-ten segment-on"></div>
+              <div class="segment seg-2 segment-ten segment-on"></div>
+              <div class="segment seg-3 segment-ten segment-on"></div>
+              <div class="segment seg-4 segment-ten segment-on"></div>
+              <div class="segment seg-5 segment-ten segment-on"></div>
+              <div class="segment seg-6 segment-ten"></div>
+            </div>
+            <div class="seconds-hundred">
+              <div class="segment seg-0 segment-hundred segment-on"></div>
+              <div class="segment seg-1 segment-hundred segment-on"></div>
+              <div class="segment seg-2 segment-hundred segment-on"></div>
+              <div class="segment seg-3 segment-hundred segment-on"></div>
+              <div class="segment seg-4 segment-hundred segment-on"></div>
+              <div class="segment seg-5 segment-hundred segment-on"></div>
+              <div class="segment seg-6 segment-hundred"></div>
+            </div>
+          </div>
+        </div>
+        <canvas class="dashborad-canvas" id="canvas"></canvas>
+      </div>
+    </section>
+    <audio id="explosion">
+      <source src="./8-bit-explosion.wav" type="audio/wav" />
+    </audio>
+  </body>
+  <script src="./script.js"></script>
+</html>

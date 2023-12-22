@@ -1,0 +1,72 @@
+.segment-display {
+  height: 50px;
+  font-family: monospace;
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: black;
+  padding: 5px 10px;
+}
+
+.seconds-unit,
+.seconds-ten,
+.seconds-hundred {
+  position: relative;
+  width: 28px;
+  height: 50px;
+}
+
+.seconds-unit,
+.seconds-ten {
+  margin-left: 5px;
+}
+
+.segment {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 20px;
+  background-color: #600000;
+  border-radius: 0px;
+}
+
+.seg-0 {
+  transform: rotate(90deg);
+  top: -7px;
+  right: 11px;
+  border-radius: 0px 100px 100px 0;
+}
+.seg-1 {
+  top: 3px;
+  border-radius: 100px 0px 0px 100px;
+}
+.seg-2 {
+  top: 25px;
+  border-radius: 100px 0px 0px 100px;
+}
+.seg-3 {
+  transform: rotate(90deg);
+  border-radius: 100px 0px 0px 100px;
+  top: 35px;
+  right: 11px;
+}
+.seg-4 {
+  right: 22px;
+  top: 25px;
+  border-radius: 0px 100px 100px 0;
+}
+.seg-5 {
+  top: 3px;
+  right: 22px;
+  border-radius: 0px 100px 100px 0;
+}
+.seg-6 {
+  transform: rotate(90deg);
+  top: 14px;
+  right: 11px;
+  border-radius: 100px 100px 100px 100px;
+}
+
+.segment-on {
+  background-color: #ff0000;
+}

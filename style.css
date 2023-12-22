@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.dashborad-canvas {
+  border: 1px solid rgba(108, 108, 108, 0.75);
+}
+
+.board-wrapper {
+  max-width: 1366px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.board-container {
+  padding: 25px;
+  background-color: #c0c0c0;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.board-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.face-icon {
+  cursor: pointer;
+}
